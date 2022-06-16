@@ -1,0 +1,65 @@
+@import "fonts";
+@import "reset";
+
+body {
+    background-color: #E5E5E5;
+}
+
+.header {
+    margin: 50px 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    &__company {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    &__logo {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 200px;
+    }
+    &__name {
+        margin-left: 20px;
+        text-align: center;
+        font-family: 'Roboto';
+        font-size: 16px;
+        line-height: 19px;
+        color: #3B1D8F;
+    }
+    &__descr {
+        width: 230px;
+        margin-left: 60px;
+        font-family: 'gothampro';
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 20px;
+        color: #303030;
+    }
+    &__number {
+        font-family: 'gothampro';
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 18px;
+        text-align: right;
+        color: #303030;
+        text-decoration: none;
+    }
+    &__login {
+        width: 115px;
+        height: 50px;
+        margin-left: 35px;
+        padding: 16px 32px;
+        border-radius: 15px;
+        border: 0;
+        background-color: #273895;
+        color: #fff;
+        font-family: 'gothampro';
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 18px;
+        text-align: center;
+    }
+}

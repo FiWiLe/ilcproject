@@ -1,0 +1,192 @@
+@font-face {
+  font-family: ArtegraSans;
+  font-display: swap;
+  src: url("../fonts/ArtegraSans-Black.woff2") format("woff2"), url("../fonts/ArtegraSans-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: ArtegraSans;
+  font-display: swap;
+  src: url("../fonts/ArtegraSans-ExtraBold.woff2") format("woff2"), url("../fonts/ArtegraSans-ExtraBold.woff") format("woff");
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: ArtegraSans;
+  font-display: swap;
+  src: url("../fonts/ArtegraSans-SemiBold.woff2") format("woff2"), url("../fonts/ArtegraSans-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: gothampro;
+  font-display: swap;
+  src: url("../fonts/gothampro-bold.woff2") format("woff2"), url("../fonts/gothampro-bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: gothampro;
+  font-display: swap;
+  src: url("../fonts/gothampro-medium.woff2") format("woff2"), url("../fonts/gothampro-medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: gothampro;
+  font-display: swap;
+  src: url("../fonts/gothampro.woff2") format("woff2"), url("../fonts/gothampro.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: Montserrat;
+  font-display: swap;
+  src: url("../fonts/Montserrat-Bold.woff2") format("woff2"), url("../fonts/Montserrat-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: Montserrat;
+  font-display: swap;
+  src: url("../fonts/Montserrat-MediumItalic.woff2") format("woff2"), url("../fonts/Montserrat-MediumItalic.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: Montserrat;
+  font-display: swap;
+  src: url("../fonts/Montserrat-Regular.woff2") format("woff2"), url("../fonts/Montserrat-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: gothampro;
+  font-display: swap;
+  src: url("../fonts/gothampro-light.woff2") format("woff2"), url("../fonts/gothampro-light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: Montserrat;
+  font-display: swap;
+  src: url("../fonts/Montserrat-SemiBold.woff2") format("woff2"), url("../fonts/Montserrat-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: Roboto;
+  font-display: swap;
+  src: url("../fonts/Roboto-Light.woff2") format("woff2"), url("../fonts/Roboto-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+html, body, div, span, object, iframe, figure, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, code, em, img, small, strike, strong, sub, sup, tt, b, u, i, ol, ul, li, fieldset, form, label, table, caption, tbody, tfoot, thead, tr, th, td, main, canvas, embed, footer, header, nav, section, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+footer, header, nav, section, main {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input {
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+
+body {
+  background-color: #E5E5E5;
+}
+
+.header {
+  margin: 50px 80px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.header__company {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.header__logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 200px;
+}
+.header__name {
+  margin-left: 20px;
+  text-align: center;
+  font-family: "Roboto";
+  font-size: 16px;
+  line-height: 19px;
+  color: #3B1D8F;
+}
+.header__descr {
+  width: 230px;
+  margin-left: 60px;
+  font-family: "gothampro";
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  color: #303030;
+}
+.header__number {
+  font-family: "gothampro";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 18px;
+  text-align: right;
+  color: #303030;
+  text-decoration: none;
+}
+.header__login {
+  width: 115px;
+  height: 50px;
+  margin-left: 35px;
+  padding: 16px 32px;
+  border-radius: 15px;
+  border: 0;
+  background-color: #273895;
+  color: #fff;
+  font-family: "gothampro";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 18px;
+  text-align: center;
+}
