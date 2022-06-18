@@ -460,3 +460,52 @@ body {
   top: 65%;
   right: 17%;
 }
+
+.support {
+  margin: 0 auto;
+  margin-bottom: 144px;
+  width: 1060px;
+  display: flex;
+  flex-direction: column;
+}
+.support__title {
+  margin-bottom: 31px;
+  text-align: center;
+  font-family: "gothampro";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color: #303030;
+}
+.support__items {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.support__item {
+  width: 344px;
+  height: 344px;
+  padding: 32px;
+  background-color: #fff;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.support__img {
+  margin: 0 auto;
+}
+.support__category {
+  margin: 16px 0;
+  font-family: "gothampro";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color: #303030;
+}
+.support__descr {
+  font-family: "gothampro";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: #404040;
+}

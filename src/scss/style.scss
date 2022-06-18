@@ -331,3 +331,51 @@ body {
         }
     }
 }
+.support {
+    margin: 0 auto;
+    margin-bottom: 144px;
+    width: 1060px;
+    display: flex;
+    flex-direction: column;
+    &__title {
+        margin-bottom: 31px;
+        text-align: center;
+        font-family: 'gothampro';
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24px;
+        color: #303030;
+    }
+    &__items {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    &__item {
+        width: 344px;
+        height: 344px;
+        padding: 32px;
+        background-color: #fff;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+    &__img {
+        margin: 0 auto;
+    }
+    &__category {
+        margin: 16px 0;
+        font-family: 'gothampro';
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24px;
+        color: #303030;
+    }
+    &__descr {
+        font-family: 'gothampro';
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 150%;
+        color: #404040;
+    }
+}
