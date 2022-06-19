@@ -135,6 +135,7 @@ body {
 }
 
 .btn {
+  cursor: pointer;
   width: 115px;
   height: 50px;
   padding: 16px 32px;
@@ -152,6 +153,13 @@ body {
 .btn:hover {
   transition: all 0.2s;
   background-color: #202e7d;
+}
+
+.card {
+  background: linear-gradient(236.29deg, #FFFFFF 29.99%, #F4F9FF 79.17%);
+  box-shadow: 0px 4px 100px rgba(208, 218, 227, 0.57);
+  border-radius: 10px;
+  padding: 32px;
 }
 
 .header {
@@ -305,12 +313,8 @@ body {
   margin-left: auto;
   width: 712px;
   height: 164px;
-  background-color: #F4F7FA;
-  border-radius: 10px;
   display: flex;
   flex-direction: row;
-  padding: 30px 30px;
-  box-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
 }
 .capabilities__item {
   margin-left: 32px;
@@ -367,10 +371,6 @@ body {
   flex-wrap: wrap;
 }
 .about__feature {
-  background: linear-gradient(236.29deg, #FFFFFF 29.99%, #F4F9FF 79.17%);
-  box-shadow: 0px 4px 100px rgba(208, 218, 227, 0.57);
-  border-radius: 10px;
-  padding: 30px;
   margin-bottom: 17px;
   margin-left: 25px;
 }
@@ -485,11 +485,10 @@ body {
 .support__item {
   width: 344px;
   height: 344px;
-  padding: 32px;
-  background-color: #fff;
-  border-radius: 10px;
   display: flex;
   flex-direction: column;
+  box-shadow: none;
+  background: #fff;
 }
 .support__img {
   margin: 0 auto;
@@ -507,5 +506,132 @@ body {
   font-weight: 400;
   font-size: 14px;
   line-height: 150%;
+  color: #404040;
+}
+
+.sirius {
+  display: flex;
+  flex-direction: column;
+  width: 1260px;
+  margin-bottom: 144px;
+}
+.sirius__header {
+  margin-bottom: 20px;
+  text-align: center;
+  font-family: "gothampro";
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+}
+.sirius__content {
+  position: relative;
+  width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.sirius__smartphone {
+  position: absolute;
+  z-index: -2;
+  margin-top: 15px;
+}
+.sirius .question-box {
+  width: 187px;
+  height: 105px;
+  margin-left: 78px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 19px;
+  box-shadow: 0px 13.5277px 39.7872px rgba(187, 166, 255, 0.78);
+}
+.sirius .question-box__text {
+  margin-bottom: 7px;
+  text-align: center;
+  font-family: "gothampro";
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  color: #000;
+}
+.sirius .question-box__btn {
+  width: 148px;
+  height: 46px;
+  padding: 16px 22px;
+  background: linear-gradient(326.06deg, #784DFF 11.53%, #4614E8 74.32%);
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: 400;
+}
+.sirius .question-box__btn:hover {
+  transition: all 0.2s;
+  box-shadow: 0 0 10px rgba(187, 166, 255, 0.78);
+  background: linear-gradient(326.06deg, #7049f2 11.53%, #3c10cd 74.32%);
+}
+.sirius__about {
+  display: flex;
+  flex-direction: column;
+  margin-top: 31px;
+  margin-left: 29px;
+  margin-bottom: 60px;
+}
+.sirius__title {
+  text-align: left;
+  font-family: "gothampro";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 44px;
+  letter-spacing: 0.17em;
+  color: #34449C;
+  text-transform: uppercase;
+}
+.sirius__descr {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.sirius__textbox {
+  width: 438px;
+}
+.sirius__text {
+  margin-bottom: 24px;
+  font-family: "gothampro";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #404040;
+}
+.sirius__text:last-child {
+  margin-bottom: 0;
+}
+.sirius__features {
+  margin-left: 70px;
+}
+.sirius__feature {
+  list-style-image: url("../img/arrow.svg");
+}
+.sirius .cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.sirius .cards__item {
+  width: 236px;
+  height: 342px;
+}
+.sirius .cards__title {
+  margin: 16px 0;
+  font-family: "gothampro";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #404040;
+}
+.sirius .cards__descr {
+  font-family: "gothampro";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
   color: #404040;
 }

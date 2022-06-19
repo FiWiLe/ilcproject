@@ -18,7 +18,7 @@
         </div>
         <div class="header__contacts">
             <a href="#" class="header__number">8 (800) 511-37-68</a>
-            <a href="#" class="btn header__login">Войти</a>
+            <button type="button" class="btn header__login">Войти</button>
         </div>
     </header>
     <nav class="nav">
@@ -37,7 +37,7 @@
                     Ваша личная команда профессиональных юристов, которая всегда под рукой. А также доступ к бонусам партнерской программы — доход 
                     до $260 с каждого полиса, купленного по вашему приглашению.
                 </p>
-                <a href="#" class="btn main__try">Попробовать бесплатно</a>
+                <button type="button" class="btn main__try">Попробовать бесплатно</button>
             </div>
             <div class="main__advantages">
                 <div class="main__income">
@@ -47,7 +47,7 @@
                 <img src="img/Creative_process.svg" alt="Creative Process" class="main__process">
             </div>
         </div>
-        <div class="capabilities">
+        <div class="card capabilities">
             <div class="capabilities__item">
                 <img src="img/clock.svg" alt="Support" class="capabilities__img">
                 <p class="capabilities__info">Юридическая поддержка 24/7</p>
@@ -69,19 +69,19 @@
             <p class="about__subtitle">Мы предоставляем комплексный консалтинговый сервис с полисной системой обслуживания для частных клиентов и для бизнеса, с использованием новейших цифровых технологий.</p>
         </div>
         <div class="about__features">
-            <div class="about__feature about__feature_big">
+            <div class="card about__feature about__feature_big">
                 <p class="about__numbers">100+<span>тыс</span></p>
                 <p class="about__text">Клиентов по всему миру</p>
             </div>
-            <div class="about__feature about__feature_small">
+            <div class="card about__feature about__feature_small">
                 <p class="about__numbers">15<span>лет</span></p>
                 <p class="about__text">Опыта работы в данной сфере</p>
             </div>
-            <div class="about__feature about__feature_small">
+            <div class="card about__feature about__feature_small">
                 <p class="about__numbers">50+</p>
                 <p class="about__text">Опытных юристов в штате</p>
             </div>
-            <div class="about__feature about__feature_square">
+            <div class="card about__feature about__feature_square">
                 <p class="about__sirius">sirius</p>
                 <p class="about__text">Система на базе искусственного интеллекта</p>
             </div>
@@ -93,20 +93,73 @@
     <section class="support">
         <p class="support__title">Даем поддержку</p>
         <div class="support__items">
-            <div class="support__item">
+            <div class="card support__item">
                 <img src="img/business.svg" alt="Business" class="support__img">
                 <p class="support__category">Бизнесу</p>
                 <p class="support__descr">Услуги профессиональных юристов для вашей компании по фиксированному тарифу — это в несколько раз выгоднее, чем содержать свой штат.</p>
             </div>
-            <div class="support__item">
+            <div class="card support__item">
                 <img src="img/startup.svg" alt="StartUP" class="support__img">
                 <p class="support__category">StartUP проектам</p>
                 <p class="support__descr">Эксперты ILC помогут выбрать оптимальную правовую форму для ведения бизнеса, оптимизировать налоги и подготовить необходимый  пакет документов.</p>
             </div>
-            <div class="support__item">
+            <div class="card support__item">
                 <img src="img/privat.svg" alt="Privat" class="support__img">
                 <p class="support__category">Частным клиентам</p>
                 <p class="support__descr">Оперативные решения сложных вопросов в режиме онлайн: ДТП, наследство, страховые споры, земельные и имущественные процессы, защита прав.</p>
+            </div>
+        </div>
+    </section>
+    <section class="sirius">
+        <p class="sirius__header">Преимущества сервиса</p>
+        <div class="sirius__content">
+            <img src="img/smart.png" alt="Smartphone" class="sirius__smartphone">
+            <div class="card question-box">
+                <p class="question-box__text">Чем могу Вам помочь?</p>
+                <button type="button" class="btn question-box__btn">Задайте вопрос</button>
+            </div>
+            <div class="sirius__about">
+                <p class="sirius__title">sirius</p>
+                <div class="sirius__descr">
+                    <div class="sirius__textbox">
+                        <p class="sirius__text">— первый полноценный искусственный интеллект, самостоятельно консультирующий людей по любым юридическим вопросам в режиме реального времени.</p>
+                        <p class="sirius__text">Sirius анализирует входящий запрос и оперативно генерирует квалифицированный ответ на основании юридической логики.</p>
+                        <p class="sirius__text">Доступ к системе предоставляется владельцу полиса в личном кабинете на нашем сайте.</p>
+                    </div>
+                    <ul class="sirius__features">
+                        <li class="sirius__feature sirius__text">работает 24/7</li>
+                        <li class="sirius__feature sirius__text">100% точность и корректность ответов</li>
+                        <li class="sirius__feature sirius__text">при необходимости, подключает живого специалиста</li>
+                        <li class="sirius__feature sirius__text">не берет больничный и никогда не уволится </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="cards">
+            <div class="card cards__item">
+                <img src="img/chat.svg" alt="Chat" class="cards__img">
+                <p class="cards__title">Удобный формат</p>
+                <p class="cards__descr">Консультируем 24/7 в любом удобном формате: чат, аудио-звонок, c помощью искусственного интеллекта Sirius в личном кабинете.</p>
+            </div>
+            <div class="card cards__item">
+                <img src="img/money.svg" alt="Money" class="cards__img">
+                <p class="cards__title">Доступная цена</p>
+                <p class="cards__descr">Выбирайте комфортный для себя пакет юридической поддержки, оплачивая только то, что действительно нужно.</p>
+            </div>
+            <div class="card cards__item">
+                <img src="img/calculator.svg" alt="Calculator" class="cards__img">
+                <p class="cards__title">Налоговый калькулятор</p>
+                <p class="cards__descr">Точный расчет налоговой нагрузки за считанные минуты с помощью телеграм-бота ILC_tax — это быстро и удобно!</p>
+            </div>
+            <div class="card cards__item">
+                <img src="img/document.svg" alt="Document" class="cards__img">
+                <p class="cards__title">Конструктор документов</p>
+                <p class="cards__descr">Доступ к более чем 9500 готовых и проработанных документов для бизнеса — бесплатно!</p>
+            </div>
+            <div class="card cards__item">
+                <img src="img/access.svg" alt="Access" class="cards__img">
+                <p class="cards__title">Бесплатный доступ для всех, кто зарегистрируется</p>
+                <p class="cards__descr">Конструктор с ограниченным количеством документов на базе телеграм-бота.</p>
             </div>
         </div>
     </section>
