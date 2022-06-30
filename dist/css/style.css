@@ -129,7 +129,6 @@ input {
 }
 
 body {
-  width: 1280px;
   margin: 50px auto;
   background-color: #E5E5E5;
 }
@@ -163,6 +162,8 @@ body {
 }
 
 .header {
+  width: 1280px;
+  margin: 0 auto;
   margin: 50px auto;
   display: flex;
   flex-direction: row;
@@ -214,11 +215,13 @@ body {
 }
 
 .nav {
-  width: 640px;
+  width: 1280px;
+  margin: 0 auto;
   display: flex;
-  justify-content: space-between;
+  justify-content: start;
 }
 .nav__link {
+  margin-left: 48px;
   font-family: "gothampro";
   font-weight: 600;
   font-size: 16px;
@@ -229,8 +232,13 @@ body {
 .nav__link:hover {
   color: #273895;
 }
+.nav__link:first-child {
+  margin-left: 0;
+}
 
 .main {
+  width: 1280px;
+  margin: 0 auto;
   margin-bottom: 187px;
   display: flex;
   flex-direction: column;
@@ -510,6 +518,7 @@ body {
 }
 
 .sirius {
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   width: 1260px;
@@ -820,4 +829,34 @@ body {
 .tariffs .tariff__request {
   width: 220px;
   height: 56px;
+}
+
+.partner {
+  width: 100%;
+  height: 400px;
+  background: #273895 no-repeat url("../img/partners.jpg") right;
+  padding: 88px 0 205px 196px;
+  margin-bottom: 76px;
+  position: relative;
+}
+.partner__img {
+  position: absolute;
+  z-index: 0;
+  bottom: 0;
+}
+.partner__header {
+  font-family: "gothampro";
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  color: #fff;
+}
+.partner__subheader {
+  width: 307px;
+  font-family: "gothampro";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #e9e9e9;
+  margin-top: 16px;
 }
