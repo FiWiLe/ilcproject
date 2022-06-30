@@ -832,6 +832,9 @@ body {
 }
 
 .partner {
+  margin-bottom: 144px;
+}
+.partner .banner {
   width: 100%;
   height: 400px;
   background: #273895 no-repeat url("../img/partners.jpg") right;
@@ -839,19 +842,19 @@ body {
   margin-bottom: 76px;
   position: relative;
 }
-.partner__img {
+.partner .banner__img {
   position: absolute;
   z-index: 0;
   bottom: 0;
 }
-.partner__header {
+.partner .banner__header {
   font-family: "gothampro";
   font-weight: 700;
   font-size: 32px;
   line-height: 44px;
   color: #fff;
 }
-.partner__subheader {
+.partner .banner__subheader {
   width: 307px;
   font-family: "gothampro";
   font-weight: 400;
@@ -859,4 +862,62 @@ body {
   line-height: 24px;
   color: #e9e9e9;
   margin-top: 16px;
+}
+.partner__cards {
+  width: 1062px;
+  margin: 0 auto;
+}
+.partner__card {
+  height: 229px;
+  margin-bottom: 16px;
+  padding: 48px 187px 48px 110px;
+  background: #fff;
+  display: flex;
+  flex-direction: row;
+}
+.partner__card:last-child {
+  margin-bottom: 32px;
+}
+.partner__card_big {
+  height: 249px;
+}
+.partner__card_huge {
+  height: 299px;
+}
+.partner__textbox {
+  margin-left: 32px;
+}
+.partner__title {
+  margin-bottom: 16px;
+  font-family: "gothampro";
+  font-weight: 500;
+  font-size: 16px;
+  color: #404040;
+}
+.partner__descr {
+  margin-bottom: 16px;
+  font-family: "gothampro";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #404040;
+}
+.partner__descr:last-child {
+  margin-bottom: 0;
+}
+.partner__descr_light {
+  color: #B7B6B6;
+}
+.partner__descr strong {
+  font-weight: 600;
+}
+.partner__descr ul {
+  list-style-type: disc;
+  list-style-position: inside;
+}
+.partner__btn {
+  width: 250px;
+  height: 56px;
+  margin: 0 auto;
+  display: block;
 }
