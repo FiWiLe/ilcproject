@@ -160,6 +160,53 @@ body {
   border-radius: 10px;
   padding: 32px;
 }
+.card__title {
+  margin-bottom: 16px;
+  font-family: "gothampro";
+  font-weight: 500;
+  font-size: 16px;
+  color: #404040;
+}
+.card__descr {
+  margin-bottom: 16px;
+  font-family: "gothampro";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #404040;
+}
+.card__descr:last-child {
+  margin-bottom: 0;
+}
+.card__descr_light {
+  color: #B7B6B6;
+}
+.card__descr strong {
+  font-weight: 600;
+}
+.card__descr ul {
+  list-style-type: disc;
+  list-style-position: inside;
+}
+.card__textbox {
+  margin-left: 32px;
+}
+
+.title {
+  margin-bottom: 16px;
+  text-align: center;
+  font-family: "gothampro";
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  color: #303030;
+}
+.title_white {
+  color: #fff;
+}
+.title_left {
+  text-align: left;
+}
 
 .header {
   width: 1280px;
@@ -357,14 +404,6 @@ body {
 .about__logo {
   margin-bottom: 32px;
 }
-.about__title {
-  margin-bottom: 16px;
-  font-family: "gothampro";
-  font-weight: 700;
-  font-size: 32px;
-  line-height: 44px;
-  color: #303030;
-}
 .about__subtitle {
   font-family: "gothampro";
   font-weight: 400;
@@ -524,14 +563,6 @@ body {
   width: 1260px;
   margin-bottom: 144px;
 }
-.sirius__header {
-  margin-bottom: 20px;
-  text-align: center;
-  font-family: "gothampro";
-  font-weight: 700;
-  font-size: 32px;
-  line-height: 44px;
-}
 .sirius__content {
   position: relative;
   width: 1100px;
@@ -652,15 +683,6 @@ body {
   margin-bottom: 144px;
   display: flex;
   flex-direction: column;
-}
-.tariffs__title {
-  margin-bottom: 16px;
-  text-align: center;
-  font-family: "gothampro";
-  font-weight: 700;
-  font-size: 32px;
-  line-height: 44px;
-  color: #303030;
 }
 .tariffs__subtitle {
   margin-bottom: 32px;
@@ -847,13 +869,6 @@ body {
   z-index: 0;
   bottom: 0;
 }
-.partner .banner__header {
-  font-family: "gothampro";
-  font-weight: 700;
-  font-size: 32px;
-  line-height: 44px;
-  color: #fff;
-}
 .partner .banner__subheader {
   width: 307px;
   font-family: "gothampro";
@@ -884,40 +899,66 @@ body {
 .partner__card_huge {
   height: 299px;
 }
-.partner__textbox {
-  margin-left: 32px;
-}
-.partner__title {
-  margin-bottom: 16px;
-  font-family: "gothampro";
-  font-weight: 500;
-  font-size: 16px;
-  color: #404040;
-}
-.partner__descr {
-  margin-bottom: 16px;
-  font-family: "gothampro";
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 20px;
-  color: #404040;
-}
-.partner__descr:last-child {
-  margin-bottom: 0;
-}
-.partner__descr_light {
-  color: #B7B6B6;
-}
-.partner__descr strong {
-  font-weight: 600;
-}
-.partner__descr ul {
-  list-style-type: disc;
-  list-style-position: inside;
-}
 .partner__btn {
   width: 250px;
   height: 56px;
   margin: 0 auto;
   display: block;
+}
+
+.start {
+  margin-bottom: 144px;
+}
+.start__cards {
+  margin-top: 48px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background: url("../img/line.svg") center center no-repeat;
+}
+.start__card {
+  margin-right: 16px;
+}
+.start__card_small {
+  width: 296px;
+  height: 243px;
+}
+.start__card_big {
+  padding: 73px 40px 57px 40px;
+  width: 312px;
+  height: 505px;
+}
+.start__card_medium {
+  width: 312px;
+  height: 366px;
+  padding: 40px;
+}
+.start__card:last-child {
+  margin-right: 0;
+}
+.start__card:first-child {
+  margin-bottom: 16px;
+}
+.start__number {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "gothampro";
+  font-weight: 700;
+  font-size: 14px;
+  color: #404040;
+  border: 3px solid #404040;
+  border-radius: 100%;
+}
+.start__img {
+  margin-bottom: 16px;
+}
+.start__btn {
+  width: 232px;
+  height: 56px;
+  padding: 16px 26px;
+  font-weight: 500;
 }
