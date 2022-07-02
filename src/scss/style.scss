@@ -2,8 +2,8 @@
 @import "reset";
 
 body {
-    margin: 50px auto;
-    background-color: #E5E5E5;
+    margin: 0 auto;
+    background-color: #F4F7FA;
 }
 
 .btn {
@@ -26,6 +26,7 @@ body {
         background-color: #202e7d;
     }
 }
+
 .card {
     background: linear-gradient(236.29deg, #FFFFFF 29.99%, #F4F9FF 79.17%);
     box-shadow: 0px 4px 100px rgba(208, 218, 227, 0.57);
@@ -61,6 +62,13 @@ body {
     }
     &__textbox {
         margin-left: 32px;
+    }
+    &__quote {
+        font-family: 'gothampro';
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 16px;
+        color: #303030;
     }
 }
 
@@ -235,6 +243,7 @@ body {
         z-index: -2;
     }
 }
+
 .capabilities {
     margin-left: auto;
     width: 712px;
@@ -259,6 +268,7 @@ body {
         color: #303030;
     }
 }
+
 .about {
     position: relative;
     width: 1060px;
@@ -377,6 +387,7 @@ body {
         }
     }
 }
+
 .support {
     margin: 0 auto;
     margin-bottom: 144px;
@@ -424,6 +435,7 @@ body {
         color: #404040;
     }
 }
+
 .sirius {
     margin: 0 auto;
     display: flex;
@@ -544,6 +556,7 @@ body {
         }
     }
 }
+
 .tariffs {
     width: 1062px;
     margin: 0 auto;
@@ -721,6 +734,7 @@ body {
         }
     }
 }
+
 .partner {
     margin-bottom: 144px;
     .banner {
@@ -773,6 +787,7 @@ body {
         display: block;
     }
 }
+
 .start {
     margin-bottom: 144px;
     &__cards {
@@ -827,5 +842,223 @@ body {
         height: 56px;
         padding: 16px 26px;
         font-weight: 500;
+    }
+}
+
+.prediction {
+    width: 100%;
+    height: 287px;
+    margin-bottom: 144px;
+    padding: 96px 80px;
+    background-color: #273895;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    &__title {
+        width: 406px;
+    }
+    &__container {
+        display: flex;
+        flex-direction: row;
+    }
+    &__item {
+        width: 125px;
+        margin-right: 32px;
+        text-align: center;
+        &:nth-child(2) {
+            width: 202px;
+            margin-right: 16px;
+        }
+        &:nth-child(3) {
+            width: 168px;
+            margin-right: 18px;
+        }
+        &:last-child {
+            width: 170px;
+            margin-right: 0;
+        }
+    }
+    &__number {
+        font-family: 'gothampro';
+        font-weight: 600;
+        font-size: 32px;
+        margin-bottom: 16px;
+        color: transparent;
+        background: linear-gradient(93.03deg, #4614E8 11.01%, #BCA7FF 78.81%), #FFFFFF;
+        -webkit-background-clip: text;
+        background-clip: text;
+    }
+    &__descr {
+        font-family: 'gothampro';
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        color: #fff;
+    }
+}
+
+.director {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 171px;
+    &__img {
+        position: relative;
+        width: 419px;
+        height: 584px;
+        border-radius: 20px;
+        background: url('../img/director.jpg') no-repeat;
+        background-color: #E5E5E5;
+    }
+    &__card {
+        position: absolute;
+        width: 360px;
+        height: 125px;
+        bottom: -27px;
+        left: 187px;
+        box-shadow: 0px 13.5277px 39.7872px rgba(187, 166, 255, 0.2);
+        div {
+            font-family: 'gothampro';
+            font-weight: 500;
+            font-size: 32px;
+            line-height: 16px;
+            color: #303030;
+        }
+    }
+    &__container {
+        width: 470px;
+        margin-top: 58px;
+        margin-left: 96px;
+    }
+    &__job {
+        font-family: 'gothampro';
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        color: #404040;
+    }
+    &__name {
+        margin-bottom: 16px;
+        font-family: 'gothampro';
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 44px;
+        color: #303030;
+    }
+    &__experience {
+        margin-bottom: 32px;
+        font-family: 'gothampro';
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 20px;
+        color: #404040;
+    }
+    &__descr {
+        margin-bottom: 16px;
+        font-family: 'gothampro';
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        color: #404040;
+        ul {
+            list-style: disc;
+            list-style-position: inside;
+        }
+    }
+    &__more {
+        margin-bottom: 32px;
+        font-family: 'gothampro';
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        color: #404040;
+    }
+    &__btn {
+        width: 251px;
+        height: 56px;
+    }
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid #DEE6EF;
+    &__main {
+        padding: 32px 110px 32px 80px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    &__about {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    &__logo {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    &__company {
+        display: inline-block;
+        width: 88px;
+        margin-left: 40px;
+        text-decoration: none;
+        font-family: 'Roboto';
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 19px;
+        color: #3B1D8F;
+    }
+    &__descr {
+        width: 227px;
+        margin-left: 48px;
+        font-family: 'gothampro';
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 20px;
+    }
+    &__social {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    &__link {
+        width: 36px;
+        height: 36px;
+        margin-left: 8px;
+        padding: 9px;
+        border: 1px solid #CFDAE7;
+        border-radius: 10px;
+        &:first-child {
+            margin-left: 0;
+        }
+    }
+    .copyright {
+        padding: 16px 110px 16px 80px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #E8EDF3;
+        &__name {
+            font-family: 'gothampro';
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 20px;
+            color: #7a7a7a;
+        }
+        &__link {
+            margin-left: 16px;
+            font-family: 'gothampro';
+            font-weight: 400;
+            font-size: 10px;
+            line-height: 20px;
+            color: #7a7a7a;
+            text-decoration: none;
+            &:first-child {
+                margin-left: 0;
+            }
+        }
     }
 }
