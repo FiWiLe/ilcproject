@@ -9,31 +9,40 @@
 </head>
 <body>
     <header class="header">
-        <div class="header__company">
-            <div class="header__logo">
-                <a href="#" class="logo"><img src="img/logo.svg" alt="ILC Logo"></a>
-                <p class="header__name">International Legal Center</p>
+        <div class="header__main">
+            <div class="header__company">
+                <div class="header__logo">
+                    <a href="#" class="logo"><img src="img/logo.svg" alt="ILC Logo"></a>
+                    <p class="header__name">International Legal Center</p>
+                </div>
+                <p class="header__descr">Первый цифровой международный юридический центр</p>
             </div>
-            <p class="header__descr">Первый цифровой международный юридический центр</p>
+            <div class="header__contacts">
+                <a href="#" class="header__number">8 (800) 511-37-68</a>
+                <button type="button" class="btn header__login">Войти</button>
+            </div>
         </div>
-        <div class="header__contacts">
-            <a href="#" class="header__number">8 (800) 511-37-68</a>
-            <button type="button" class="btn header__login">Войти</button>
-        </div>
+        <nav class="menu">
+            <div class="menu__icon">
+                <span></span>
+            </div>
+            <div class="menu__body">
+                <div class="menu__list">
+                    <a href="#" class="menu__link">О компании</a>
+                    <a href="#" class="menu__link">Услуги</a>
+                    <a href="#" class="menu__link">Sirius</a>
+                    <a href="#" class="menu__link">Тарифы</a>
+                    <a href="#" class="menu__link">FAQ</a>
+                    <a href="#" class="menu__link">Контакты</a>
+                </div>
+            </div>
+        </nav>
     </header>
-    <nav class="nav">
-        <a href="#" class="nav__link">О компании</a>
-        <a href="#" class="nav__link">Услуги</a>
-        <a href="#" class="nav__link">Sirius</a>
-        <a href="#" class="nav__link">Тарифы</a>
-        <a href="#" class="nav__link">FAQ</a>
-        <a href="#" class="nav__link">Контакты</a>
-    </nav>
     <section class="main">
         <div class="main__content">
             <div class="main__info">
                 <h1 class="main__tagline">Юридический полис ILC — быстрое решение сложных вопросов 24/7</h1>
-                <p class="main__descr">
+                <p class="subtitle main__descr">
                     Ваша личная команда профессиональных юристов, которая всегда под рукой. А также доступ к бонусам партнерской программы — доход 
                     до $260 с каждого полиса, купленного по вашему приглашению.
                 </p>
@@ -66,7 +75,7 @@
         <div class="about__info">
             <img src="img/logo.svg" alt="ILC Logo" class="about__logo">
             <p class="title title_left">Ваша личная online команда юристов</p>
-            <p class="about__subtitle">Мы предоставляем комплексный консалтинговый сервис с полисной системой обслуживания для частных клиентов и для бизнеса, с использованием новейших цифровых технологий.</p>
+            <p class="subtitle about__subtitle">Мы предоставляем комплексный консалтинговый сервис с полисной системой обслуживания для частных клиентов и для бизнеса, с использованием новейших цифровых технологий.</p>
         </div>
         <div class="about__features">
             <div class="card about__feature about__feature_big">
@@ -96,17 +105,17 @@
             <div class="card support__item">
                 <img src="img/business.svg" alt="Business" class="support__img">
                 <p class="support__category">Бизнесу</p>
-                <p class="support__descr">Услуги профессиональных юристов для вашей компании по фиксированному тарифу — это в несколько раз выгоднее, чем содержать свой штат.</p>
+                <p class="subtitle support__descr">Услуги профессиональных юристов для вашей компании по фиксированному тарифу — это в несколько раз выгоднее, чем содержать свой штат.</p>
             </div>
             <div class="card support__item">
                 <img src="img/startup.svg" alt="StartUP" class="support__img">
                 <p class="support__category">StartUP проектам</p>
-                <p class="support__descr">Эксперты ILC помогут выбрать оптимальную правовую форму для ведения бизнеса, оптимизировать налоги и подготовить необходимый  пакет документов.</p>
+                <p class="subtitle support__descr">Эксперты ILC помогут выбрать оптимальную правовую форму для ведения бизнеса, оптимизировать налоги и подготовить необходимый  пакет документов.</p>
             </div>
             <div class="card support__item">
                 <img src="img/privat.svg" alt="Privat" class="support__img">
                 <p class="support__category">Частным клиентам</p>
-                <p class="support__descr">Оперативные решения сложных вопросов в режиме онлайн: ДТП, наследство, страховые споры, земельные и имущественные процессы, защита прав.</p>
+                <p class="subtitle support__descr">Оперативные решения сложных вопросов в режиме онлайн: ДТП, наследство, страховые споры, земельные и имущественные процессы, защита прав.</p>
             </div>
         </div>
     </section>
@@ -122,15 +131,15 @@
                 <p class="sirius__title">sirius</p>
                 <div class="sirius__descr">
                     <div class="sirius__textbox">
-                        <p class="sirius__text">— первый полноценный искусственный интеллект, самостоятельно консультирующий людей по любым юридическим вопросам в режиме реального времени.</p>
-                        <p class="sirius__text">Sirius анализирует входящий запрос и оперативно генерирует квалифицированный ответ на основании юридической логики.</p>
-                        <p class="sirius__text">Доступ к системе предоставляется владельцу полиса в личном кабинете на нашем сайте.</p>
+                        <p class="subtitle sirius__text">— первый полноценный искусственный интеллект, самостоятельно консультирующий людей по любым юридическим вопросам в режиме реального времени.</p>
+                        <p class="subtitle sirius__text">Sirius анализирует входящий запрос и оперативно генерирует квалифицированный ответ на основании юридической логики.</p>
+                        <p class="subtitle sirius__text">Доступ к системе предоставляется владельцу полиса в личном кабинете на нашем сайте.</p>
                     </div>
                     <ul class="sirius__features">
-                        <li class="sirius__feature sirius__text">работает 24/7</li>
-                        <li class="sirius__feature sirius__text">100% точность и корректность ответов</li>
-                        <li class="sirius__feature sirius__text">при необходимости, подключает живого специалиста</li>
-                        <li class="sirius__feature sirius__text">не берет больничный и никогда не уволится </li>
+                        <li class="subtitle sirius__feature sirius__text">работает 24/7</li>
+                        <li class="subtitle sirius__feature sirius__text">100% точность и корректность ответов</li>
+                        <li class="subtitle sirius__feature sirius__text">при необходимости, подключает живого специалиста</li>
+                        <li class="subtitle sirius__feature sirius__text">не берет больничный и никогда не уволится </li>
                     </ul>
                 </div>
             </div>
@@ -139,33 +148,33 @@
             <div class="card cards__item">
                 <img src="img/chat.svg" alt="Chat" class="cards__img">
                 <p class="cards__title">Удобный формат</p>
-                <p class="cards__descr">Консультируем 24/7 в любом удобном формате: чат, аудио-звонок, c помощью искусственного интеллекта Sirius в личном кабинете.</p>
+                <p class="subtitle cards__descr">Консультируем 24/7 в любом удобном формате: чат, аудио-звонок, c помощью искусственного интеллекта Sirius в личном кабинете.</p>
             </div>
             <div class="card cards__item">
                 <img src="img/money.svg" alt="Money" class="cards__img">
                 <p class="cards__title">Доступная цена</p>
-                <p class="cards__descr">Выбирайте комфортный для себя пакет юридической поддержки, оплачивая только то, что действительно нужно.</p>
+                <p class="subtitle cards__descr">Выбирайте комфортный для себя пакет юридической поддержки, оплачивая только то, что действительно нужно.</p>
             </div>
             <div class="card cards__item">
                 <img src="img/calculator.svg" alt="Calculator" class="cards__img">
                 <p class="cards__title">Налоговый калькулятор</p>
-                <p class="cards__descr">Точный расчет налоговой нагрузки за считанные минуты с помощью телеграм-бота ILC_tax — это быстро и удобно!</p>
+                <p class="subtitle cards__descr">Точный расчет налоговой нагрузки за считанные минуты с помощью телеграм-бота ILC_tax — это быстро и удобно!</p>
             </div>
             <div class="card cards__item">
                 <img src="img/document.svg" alt="Document" class="cards__img">
                 <p class="cards__title">Конструктор документов</p>
-                <p class="cards__descr">Доступ к более чем 9500 готовых и проработанных документов для бизнеса — бесплатно!</p>
+                <p class="subtitle cards__descr">Доступ к более чем 9500 готовых и проработанных документов для бизнеса — бесплатно!</p>
             </div>
             <div class="card cards__item">
                 <img src="img/access.svg" alt="Access" class="cards__img">
                 <p class="cards__title">Бесплатный доступ для всех, кто зарегистрируется</p>
-                <p class="cards__descr">Конструктор с ограниченным количеством документов на базе телеграм-бота.</p>
+                <p class="subtitle cards__descr">Конструктор с ограниченным количеством документов на базе телеграм-бота.</p>
             </div>
         </div>
     </section>
     <section class="tariffs">
         <p class="title">Тарифы</p>
-        <p class="tariffs__subtitle">для всех и для каждого</p>
+        <p class="subtitle tariffs__subtitle">для всех и для каждого</p>
         <div class="tariffs__choice">
             <button type="button" class="tariffs__option tariffs__option_active">1 месяц</button>
             <button type="button" class="tariffs__option">Год</button>
@@ -174,7 +183,7 @@
             <div class="tariff tariff__start">
                 <p class="tariff__name">Легкий старт</p>
                 <p class="tariff__free">Бесплатно</p>
-                <p class="tariff__for">Для ознакомления с сервисом и его возможностями</p>
+                <p class="subtitle tariff__for">Для ознакомления с сервисом и его возможностями</p>
                 <p class="tariff__descr">Для Вас доступно</p>
                 <div class="tariff__options_start">
                     <div>
@@ -191,7 +200,7 @@
             </div>
             <div class="tariff">
                 <p class="tariff__name">Стандарт</p>
-                <p class="tariff__for">Для физических лиц</p>
+                <p class="subtitle tariff__for">Для физических лиц</p>
                 <p class="tariff__cost">$28/месяц</p>
                 <p class="tariff__descr">Для Вас доступно</p>
                 <ul class="tariff__options">
@@ -206,7 +215,7 @@
             </div>
             <div class="tariff">
                 <p class="tariff__name">бизнес-консультант</p>
-                <p class="tariff__for">Для частных лиц и фрилансеров</p>
+                <p class="subtitle tariff__for">Для частных лиц и фрилансеров</p>
                 <p class="tariff__cost">$38/месяц</p>
                 <p class="tariff__descr">Для Вас доступно</p>
                 <ul class="tariff__options">
@@ -221,7 +230,7 @@
             </div>
             <div class="tariff">
                 <p class="tariff__name">бизнес-премиум</p>
-                <p class="tariff__for">Для среднего бизнеса</p>
+                <p class="subtitle tariff__for">Для среднего бизнеса</p>
                 <p class="tariff__cost">$49/месяц</p>
                 <p class="tariff__descr">Для Вас доступно</p>
                 <ul class="tariff__options">
@@ -236,7 +245,7 @@
             </div>
             <div class="tariff">
                 <p class="tariff__name">международный бизнес</p>
-                <p class="tariff__for">Для ведения бизнеса за рубежом</p>
+                <p class="subtitle tariff__for">Для ведения бизнеса за рубежом</p>
                 <p class="tariff__cost">$98/месяц</p>
                 <p class="tariff__descr">Для Вас доступно</p>
                 <ul class="tariff__options">
@@ -262,31 +271,31 @@
                 <img src="img/bonus.svg" alt="Bonus" class="card__img">
                 <div class="card__textbox">
                     <p class="card__title">Высокие бонусы</p>
-                    <p class="card__descr">Вы получаете до 35% от стоимости каждого полиса, который был куплен по вашей рекомендации.</p>
-                    <p class="card__descr partner__descr_light">К примеру: юридический полис “Международный бизнес” стоит $750/год, с него вы зарабатываете $260.</p>
+                    <p class="subtitle card__descr">Вы получаете до 35% от стоимости каждого полиса, который был куплен по вашей рекомендации.</p>
+                    <p class="subtitle card__descr card__descr_light">К примеру: юридический полис “Международный бизнес” стоит $750/год, с него вы зарабатваете $260.</p>
                 </div>
             </div>
             <div class="card partner__card partner__card_big">
                 <img src="img/preferences.svg" alt="preferences" class="card__img">
                 <div class="card__textbox">
                     <p class="card__title">Полезный продукт</p>
-                    <p class="card__descr">Сервис ILC — это ваша личная команда юристов, которая работает в формате “здесь и сейчас”, 24/7, без выходных.</p>
-                    <p class="card__descr">Нужна помощь? Всего 1 клик и персональный юрист ILC уже решает ваш вопрос. <strong>Это в несколько раз дешевле и быстрее, чем искать частного специалиста.</strong></p>
+                    <p class="subtitle card__descr">Сервис ILC — это ваша личная команда юристов, которая работает в формате “здесь и сейчас”, 24/7, без выходных.</p>
+                    <p class="subtitle card__descr">Нужна помощь? Всего 1 клик и персональный юрист ILC уже решает ваш вопрос. <strong>Это в несколько раз дешевле и быстрее, чем искать частного специалиста.</strong></p>
                 </div>
             </div>
             <div class="card partner__card">
                 <img src="img/development.svg" alt="development" class="card__img">
                 <div class="card__textbox">
                     <p class="card__title">Широкая аудитория</p>
-                    <p class="card__descr">Качественная юридическая помощь нужна абсолютно всем: бизнесу, семьям, крупным компаниям, экспертам и частным лицам.</p>
-                    <p class="card__descr">Рекомендуя полис ILC, <strong>вы помогаете людям</strong> оперативно решать жизненные задачи в 1 клик.</p>
+                    <p class="subtitle card__descr">Качественная юридическая помощь нужна абсолютно всем: бизнесу, семьям, крупным компаниям, экспертам и частным лицам.</p>
+                    <p class="subtitle card__descr">Рекомендуя полис ILC, <strong>вы помогаете людям</strong> оперативно решать жизненные задачи в 1 клик.</p>
                 </div>
             </div>
             <div class="card partner__card partner__card_huge">
                 <img src="img/education.svg" alt="education" class="card__img">
                 <div class="card__textbox">
                     <p class="card__title">Обучение и поддержка</p>
-                    <div class="card__descr">
+                    <div class="subtitle card__descr">
                         Вы получите доступ в личный кабинет с подробной информацией о том, как:
                         <ul>
                             <li>эффективно привлекать клиентов,</li>
@@ -308,24 +317,24 @@
                 <div class="card start__card start__card_small">
                     <div class="start__number">1</div>
                     <p class="card__title">Регистрация</p>
-                    <p class="card__descr">Заполните простую форму для участия в программе и активируйте клиентский пакет.</p>
+                    <p class="subtitle card__descr">Заполните простую форму для участия в программе и активируйте клиентский пакет.</p>
                 </div>
                 <div class="card start__card start__card_small">
                     <div class="start__number">2</div>
                     <p class="card__title">Обучение</p>
-                    <p class="card__descr">Вас ждут полезные обучающие материалы, с помощью которых вы легко сможете монетизировать свое время.</p>
+                    <p class="subtitle card__descr">Вас ждут полезные обучающие материалы, с помощью которых вы легко сможете монетизировать свое время.</p>
                 </div>
             </div>
             <div class="card start__card start__card_big">
                 <img src="img/strategy.svg" alt="strategy" class="start__img">
                 <div class="start__number">3</div>
                 <p class="card__title">Стратегия</p>
-                <p class="card__descr">Воспользуйтесь подробным и понятным алгоритмом действий для достижения классных результатов. </p>
+                <p class="subtitle card__descr">Воспользуйтесь подробным и понятным алгоритмом действий для достижения классных результатов. </p>
             </div>
             <div class="card start__card start__card_medium">
                 <img src="img/result.svg" alt="result" class="start__img">
                 <p class="card__title">Результат</p>
-                <p class="card__descr">Зарабатывайте до 35% с каждой покупки полиса по вашей партнерской ссылке с первых дней после регистрации.</p>
+                <p class="subtitle card__descr">Зарабатывайте до 35% с каждой покупки полиса по вашей партнерской ссылке с первых дней после регистрации.</p>
                 <button type="button" class="btn start__btn">Начать зарабатывать</button>
             </div>
         </div>
@@ -335,19 +344,19 @@
         <div class="prediction__container">
             <div class="prediction__item">
                 <p class="prediction__number">$2 млн.</p>
-                <p class="prediction__descr">Заработают партнеры ILC</p>
+                <p class="subtitle prediction__descr">Заработают партнеры ILC</p>
             </div>
             <div class="prediction__item">
                 <p class="prediction__number">10 000+</p>
-                <p class="prediction__descr">Полисов будет оформлено по партнерским ссылкам</p>
+                <p class="subtitle prediction__descr">Полисов будет оформлено по партнерским ссылкам</p>
             </div>
             <div class="prediction__item">
                 <p class="prediction__number">800+</p>
-                <p class="prediction__descr">Партнеров присоединится к нам</p>
+                <p class="subtitle prediction__descr">Партнеров присоединится к нам</p>
             </div>
             <div class="prediction__item">
                 <p class="prediction__number">$1500</p>
-                <p class="prediction__descr">Средний доход партнера в месяц</p>
+                <p class="subtitle prediction__descr">Средний доход партнера в месяц</p>
             </div>
         </div>
     </section>
@@ -359,10 +368,10 @@
             </div>
         </div>
         <div class="director__container">
-            <p class="director__job">Руководитель ООО ILC</p>
+            <p class="subtitle director__job">Руководитель ООО ILC</p>
             <p class="director__name">Наталья Гуторова</p>
-            <p class="director__experience">10 лет в управлении и юриспуденции</p>
-            <div class="director__descr">Мы стараемся окружить заботой и создать максимально комфортные условия для развития каждого партнера: 
+            <p class="subtitle director__experience">10 лет в управлении и юриспуденции</p>
+            <div class="subtitle director__descr">Мы стараемся окружить заботой и создать максимально комфортные условия для развития каждого партнера: 
                 <ul>
                     <li>личный наставник</li>
                     <li>пошаговое обучение</li>
@@ -370,7 +379,7 @@
                 </ul>
                 и мгновенные выплаты бонусов.
             </div>
-            <p class="director__more">Больше деталей партнерской программы смотрите в личном кабинете после регистрации.</p>
+            <p class="subtitle director__more">Больше деталей партнерской программы смотрите в личном кабинете после регистрации.</p>
             <button type="button" class="btn director__btn">Зарегистрироваться</button>
         </div>
     </section>

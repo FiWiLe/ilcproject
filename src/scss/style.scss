@@ -1,9 +1,11 @@
 @import "fonts";
 @import "reset";
 
+
 body {
     margin: 0 auto;
     background-color: #F4F7FA;
+    font-family: 'gothampro';
 }
 
 .btn {
@@ -15,7 +17,6 @@ body {
     border: 0;
     background-color: #273895;
     color: #fff;
-    font-family: 'gothampro';
     font-weight: 700;
     font-size: 16px;
     line-height: 18px;
@@ -34,17 +35,12 @@ body {
     padding: 32px;
     &__title {
         margin-bottom: 16px;
-        font-family: 'gothampro';
         font-weight: 500;
         font-size: 16px;
         color: #404040;
     }
     &__descr {
         margin-bottom: 16px;
-        font-family: 'gothampro';
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 20px;
         color: #404040;
         &:last-child {
             margin-bottom: 0;
@@ -64,7 +60,6 @@ body {
         margin-left: 32px;
     }
     &__quote {
-        font-family: 'gothampro';
         font-weight: 400;
         font-size: 12px;
         line-height: 16px;
@@ -75,7 +70,6 @@ body {
 .title {
     margin-bottom: 16px;
     text-align: center;
-    font-family: 'gothampro';
     font-weight: 700;
     font-size: 32px;
     line-height: 44px;
@@ -88,14 +82,37 @@ body {
     }
 }
 
+.subtitle {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+}
+
 .header {
-    width: 1280px;
-    margin: 0 auto;
+    max-width: 1280px;
     margin: 50px auto;
+    margin-bottom: 0;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
+    gap: 48px;
+    @media (max-width: 1300px) {
+        padding: 0 20px;
+    }
+    @media (max-width: 768px) {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 0 20px;
+        gap: 16px;
+    }
+    &__main {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @media (max-width: 768px) {
+            flex: 0 1 80%;
+        }
+    }
     &__company {
         display: flex;
         flex-direction: row;
@@ -105,7 +122,13 @@ body {
         display: flex;
         flex-direction: row;
         align-items: center;
-        width: 200px;
+        max-width: 200px;
+        @media (max-width: 768px) {
+            max-width: 90px;
+            .logo img {
+                height: 50px;
+            }
+        }
     }
     &__name {
         margin-left: 20px;
@@ -114,41 +137,79 @@ body {
         font-size: 16px;
         line-height: 19px;
         color: #3B1D8F;
+        @media (max-width: 991px) {
+            margin-left: 12px;
+        }
+        @media (max-width: 768px) {
+            font-size: 14px;
+            line-height: 130%;
+        }
     }
     &__descr {
-        width: 230px;
+        max-width: 230px;
         margin-left: 60px;
-        font-family: 'gothampro';
         font-weight: 400;
         font-size: 12px;
         line-height: 20px;
         color: #303030;
+        @media (max-width: 991px) {
+            display: none;
+        }
     }
     &__number {
-        font-family: 'gothampro';
         font-weight: 700;
         font-size: 16px;
         line-height: 18px;
         text-align: right;
         color: #303030;
         text-decoration: none;
+        @media (max-width: 768px) {
+            display: none;
+        }
         &:hover {
             color: #273895;
         }
     }
     &__login {
         margin-left: 36px;
+        @media (max-width: 1300px) {
+            margin-left: 25px;
+        }
+        @media (max-width: 768px) {
+            width: 150px;
+        }
+        @media (max-width: 480px) {
+            width: 50px;
+            height: 50px;
+            padding: 0;
+            font-size: 0;
+            position: relative;
+            border-radius: 7px;
+            background: linear-gradient(326.06deg, #2641D1 11.53%, #3333A3 74.32%);
+            &:after {
+                width: 13px;
+                height: 22px;
+                content: url('../img/btn-smartphone.svg');
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
     }
 }
 
-.nav {
-    width: 1280px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: start;
+.menu {
+    max-width: 1280px;
+    &__list {
+        display: flex;
+        justify-content: start;
+        gap: 48px;
+        @media (max-width: 1300px) {
+            justify-content: center;
+        }
+    }
     &__link {
-        margin-left: 48px;
-        font-family: 'gothampro';
         font-weight: 600;
         font-size: 16px;
         line-height: 15px;
@@ -156,9 +217,6 @@ body {
         text-decoration: none;
         &:hover {
             color: #273895;
-        }
-        &:first-child {
-            margin-left: 0;
         }
     }
 }
@@ -178,7 +236,6 @@ body {
     }
     &__tagline {
         width: 730px;
-        font-family: 'gothampro';
         font-weight: 700;
         font-size: 48px;
         line-height: 55px;
@@ -186,11 +243,7 @@ body {
     }
     &__descr {
         margin-top: 16px;
-        width: 545px;
-        font-family: 'gothampro';
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 21px;
+        max-width: 545px;
         color: #303030;
     }
     &__try {
@@ -206,6 +259,7 @@ body {
     }
     &__income {
         margin: 0 auto;
+        margin-top: -30px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -215,7 +269,6 @@ body {
             width: 70px;
             height: 70px;
             text-align: center;
-            font-family: 'gothampro';
             font-weight: 700;
             font-size: 14px;
             line-height: 16px;
@@ -250,18 +303,12 @@ body {
     height: 164px;
     display: flex;
     flex-direction: row;
-    &__item {
-        margin-left: 32px;
-        &:first-child {
-            margin-left: 0;
-        }
-    }
+    gap: 32px;
     &__img {
         width: 42px;
         height: 42px;
     }
     &__info {
-        font-family: 'gothampro';
         font-weight: 500;
         font-size: 16px;
         line-height: 26px;
@@ -284,10 +331,6 @@ body {
         margin-bottom: 32px;
     }
     &__subtitle {
-        font-family: 'gothampro';
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 21px;
         color: #404040;
     }
     &__features {
@@ -295,22 +338,14 @@ body {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
+        gap: 17px 25px;
     }
     &__feature {
-        margin-bottom: 17px;
-        margin-left: 25px;
-        &:nth-child(odd) {
-            margin-left: 0;
-        }
         &:nth-child(2) {
             margin-top: 22px;
         }
         &:nth-child(3) {
-            margin-bottom: 0;
             margin-left: 38px;
-        }
-        &:nth-child(4) {
-            margin-bottom: 0;
         }
         &_big {
             width: 217px;
@@ -328,7 +363,6 @@ body {
     }
     &__numbers {
         margin-bottom: 10px;
-        font-family: 'gothampro';
         font-weight: 700;
         font-size: 48px;
         line-height: 44px;
@@ -342,7 +376,6 @@ body {
         }
     }
     &__text {
-        font-family: 'gothampro';
         font-weight: 400;
         font-size: 14px;
         line-height: 21px;
@@ -397,7 +430,6 @@ body {
     &__title {
         margin-bottom: 31px;
         text-align: center;
-        font-family: 'gothampro';
         font-weight: 700;
         font-size: 16px;
         line-height: 24px;
@@ -406,13 +438,14 @@ body {
     &__items {
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        gap: 16px;
     }
     &__item {
         width: 344px;
         height: 344px;
         display: flex;
         flex-direction: column;
+        gap: 16px;
         box-shadow: none;
         background: #fff;
     }
@@ -420,18 +453,12 @@ body {
         margin: 0 auto;
     }
     &__category {
-        margin: 16px 0;
-        font-family: 'gothampro';
         font-weight: 700;
         font-size: 16px;
         line-height: 24px;
         color: #303030;
     }
     &__descr {
-        font-family: 'gothampro';
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 150%;
         color: #404040;
     }
 }
@@ -467,7 +494,6 @@ body {
         &__text {
             margin-bottom: 7px;
             text-align: center;
-            font-family: 'gothampro';
             font-weight: 700;
             font-size: 12px;
             line-height: 16px;
@@ -497,7 +523,6 @@ body {
     }
     &__title {
         text-align: left;
-        font-family: 'gothampro';
         font-weight: 700;
         font-size: 16px;
         line-height: 44px;
@@ -515,10 +540,6 @@ body {
     }
     &__text {
         margin-bottom: 24px;
-        font-family: 'gothampro';
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 21px;
         color: #404040;
         &:last-child {
             margin-bottom: 0;
@@ -533,7 +554,7 @@ body {
     .cards {
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        gap: 19px;
         &__item {
             width: 236px;
             height: 342px;
@@ -541,17 +562,12 @@ body {
         }
         &__title {
             margin: 16px 0;
-            font-family: 'gothampro';
             font-weight: 700;
             font-size: 16px;
             line-height: 20px;
             color: #404040;
         }
         &__descr {
-            font-family: 'gothampro';
-            font-weight: 400;
-            font-size: 14px;
-            line-height: 21px;
             color: #404040;
         }
     }
@@ -566,10 +582,6 @@ body {
     &__subtitle {
         margin-bottom: 32px;
         text-align: center;
-        font-family: 'gothampro';
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 21px;
         color: #404040;
     }
     &__choice {
@@ -582,7 +594,6 @@ body {
         border: none;
         border-bottom: 1px dashed #273895;
         background-color: transparent;
-        font-family: 'gothampro';
         font-weight: 500;
         font-size: 20px;
         line-height: 30px;
@@ -639,7 +650,6 @@ body {
             align-items: center;
         }
         &__name {
-            font-family: 'gothampro';
             font-weight: 700;
             font-size: 16px;
             line-height: 30px;
@@ -649,7 +659,6 @@ body {
             color: #2741D0;
         }
         &__free {
-            font-family: 'gothampro';
             font-weight: 500;
             font-size: 32px;
             line-height: 44px;
@@ -657,22 +666,17 @@ body {
             color: #C9C9C9;
         }
         &__cost {
-            font-family: 'gothampro';
             font-weight: 700;
             font-size: 16px;
             line-height: 30px;
             color: #404040;
         }
         &__for {
-            font-family: 'gothampro';
-            font-weight: 400;
-            font-size: 14px;
             line-height: 30px;
             text-align: center;
             color: #737373;
         }
         &__descr {
-            font-family: 'gothampro';
             font-weight: 500;
             font-size: 16px;
             line-height: 30px;
@@ -700,7 +704,6 @@ body {
             margin-bottom: 16px;
             display: flex;
             align-items: center;
-            font-family: 'gothampro';
             font-weight: 400;
             font-size: 16px;
             line-height: 24px;
@@ -715,7 +718,6 @@ body {
             }
         }
         &__details {
-            font-family: 'gothampro';
             font-weight: 500;
             font-size: 16px;
             line-height: 40px;
@@ -751,7 +753,6 @@ body {
         }
         &__subheader {
             width: 307px;
-            font-family: 'gothampro';
             font-weight: 400;
             font-size: 16px;
             line-height: 24px;
@@ -795,10 +796,15 @@ body {
         display: flex;
         flex-direction: row;
         justify-content: center;
+        gap: 16px;
         background: url('../img/line.svg') center center no-repeat;
     }
+    &__cardbox {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
     &__card {
-        margin-right: 16px;
         &_small {
             width: 296px;
             height: 243px;
@@ -813,12 +819,6 @@ body {
             height: 366px;
             padding: 40px;
         }
-        &:last-child {
-            margin-right: 0;
-        }
-        &:first-child {
-            margin-bottom: 16px;
-        }
     }
     &__number {
         width: 40px;
@@ -827,7 +827,6 @@ body {
         display: flex;
         justify-content: center;
         align-items: center;
-        font-family: 'gothampro';
         font-weight: 700;
         font-size: 14px;
         color: #404040;
@@ -879,7 +878,6 @@ body {
         }
     }
     &__number {
-        font-family: 'gothampro';
         font-weight: 600;
         font-size: 32px;
         margin-bottom: 16px;
@@ -889,10 +887,6 @@ body {
         background-clip: text;
     }
     &__descr {
-        font-family: 'gothampro';
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 20px;
         color: #fff;
     }
 }
@@ -918,7 +912,6 @@ body {
         left: 187px;
         box-shadow: 0px 13.5277px 39.7872px rgba(187, 166, 255, 0.2);
         div {
-            font-family: 'gothampro';
             font-weight: 500;
             font-size: 32px;
             line-height: 16px;
@@ -931,15 +924,10 @@ body {
         margin-left: 96px;
     }
     &__job {
-        font-family: 'gothampro';
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 20px;
         color: #404040;
     }
     &__name {
         margin-bottom: 16px;
-        font-family: 'gothampro';
         font-weight: 700;
         font-size: 32px;
         line-height: 44px;
@@ -947,18 +935,11 @@ body {
     }
     &__experience {
         margin-bottom: 32px;
-        font-family: 'gothampro';
         font-weight: 500;
-        font-size: 14px;
-        line-height: 20px;
         color: #404040;
     }
     &__descr {
         margin-bottom: 16px;
-        font-family: 'gothampro';
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 20px;
         color: #404040;
         ul {
             list-style: disc;
@@ -967,10 +948,6 @@ body {
     }
     &__more {
         margin-bottom: 32px;
-        font-family: 'gothampro';
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 20px;
         color: #404040;
     }
     &__btn {
@@ -1013,7 +990,6 @@ body {
     &__descr {
         width: 227px;
         margin-left: 48px;
-        font-family: 'gothampro';
         font-weight: 400;
         font-size: 12px;
         line-height: 20px;
@@ -1042,7 +1018,6 @@ body {
         align-items: center;
         background-color: #E8EDF3;
         &__name {
-            font-family: 'gothampro';
             font-weight: 400;
             font-size: 12px;
             line-height: 20px;
@@ -1050,7 +1025,6 @@ body {
         }
         &__link {
             margin-left: 16px;
-            font-family: 'gothampro';
             font-weight: 400;
             font-size: 10px;
             line-height: 20px;
@@ -1062,3 +1036,5 @@ body {
         }
     }
 }
+
+@import "burger";
