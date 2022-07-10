@@ -51,6 +51,7 @@
         transform: rotate(45deg) translate(-60%, 50%);
     }
     .menu__body {
+        z-index: 4;
         position: fixed;
         top: 0;
         left: -100%;
@@ -70,8 +71,14 @@
         align-items: center;
         justify-content: center;
         gap: 80px;
+        @media (max-width: 480px) {
+            gap: 60px;
+        }
     }
     .menu__link {
         font-size: 36px;
+        @media (max-width: 480px) {
+            font-size: 24px;
+        }
     }
 }
