@@ -660,9 +660,15 @@ body {
 .support {
     margin: 0 auto;
     margin-bottom: 144px;
-    width: 1060px;
+    max-width: 1060px;
     display: flex;
     flex-direction: column;
+    @media (max-width: 1300px) {
+        padding: 0 20px;
+    }
+    @media (max-width: 991px) {
+        margin-bottom: 72px;
+    }
     &__title {
         margin-bottom: 31px;
         text-align: center;
@@ -670,32 +676,72 @@ body {
         font-size: 16px;
         line-height: 24px;
         color: #303030;
+        @media (max-width: 768px) {
+            margin-bottom: 24px;
+            font-size: 14px;
+            line-height: 21px;
+        }
     }
     &__items {
         display: flex;
         flex-direction: row;
         gap: 16px;
+        @media (max-width: 1300px) {
+            gap: 8px;
+        }
+        @media (max-width: 991px) {
+            flex-direction: column;
+            align-items: center;
+            gap: 16px;
+        }
     }
     &__item {
-        width: 344px;
-        height: 344px;
+        max-width: 344px;
+        min-height: auto;
         display: flex;
         flex-direction: column;
         gap: 16px;
         box-shadow: none;
         background: #fff;
+        @media (max-width: 1300px) {
+            gap: 8px;
+        }
+        @media (max-width: 991px) {
+            max-width: 70%;
+            gap: 16px;
+            text-align: center;
+        }
+        @media (max-width: 768px) {
+            max-width: 87.5%;
+            min-width: 280px;
+            padding: 24px;
+        }
     }
     &__img {
         margin: 0 auto;
+        @media (max-width: 480px) {
+            width: 115px;
+        }
     }
     &__category {
         font-weight: 700;
         font-size: 16px;
         line-height: 24px;
         color: #303030;
+        @media (max-width: 480px) {
+            font-size: 14px;
+            line-height: 21px;
+        }
     }
     &__descr {
         color: #404040;
+        @media (max-width: 991px) {
+            margin: 0 auto;
+        }
+        @media (max-width: 480px) {
+            font-size: 12px;
+            line-height: 18px;
+        }
     }
 }
 
