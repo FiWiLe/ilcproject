@@ -1033,41 +1033,108 @@ body {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  width: 1260px;
+  max-width: 1260px;
   margin-bottom: 144px;
 }
+@media (max-width: 991px) {
+  .sirius {
+    margin-bottom: 72px;
+  }
+}
+@media (max-width: 768px) {
+  .sirius .title {
+    font-size: 24px;
+    line-height: 30px;
+    margin-bottom: 18px;
+  }
+}
 .sirius__content {
-  position: relative;
-  width: 1100px;
+  max-width: 1100px;
   margin: 0 auto;
+  margin-bottom: 60px;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 32px;
 }
-.sirius__smartphone {
+@media (max-width: 1300px) {
+  .sirius__content {
+    padding: 0 20px;
+  }
+}
+@media (max-width: 991px) {
+  .sirius__content {
+    flex-wrap: wrap;
+    align-items: center;
+  }
+}
+@media (max-width: 768px) {
+  .sirius__content {
+    margin-bottom: 32px;
+    gap: 24px;
+  }
+}
+.sirius .smartphone {
+  position: relative;
+}
+@media (max-width: 768px) {
+  .sirius .smartphone {
+    flex: 0 1 100%;
+    display: flex;
+    justify-content: center;
+  }
+}
+.sirius .smartphone__img {
   position: absolute;
   z-index: -2;
   margin-top: 15px;
 }
-.sirius .question-box {
+@media (max-width: 991px) {
+  .sirius .smartphone__img {
+    width: 184px;
+    position: static;
+    margin-right: 24px;
+  }
+}
+@media (max-width: 768px) {
+  .sirius .smartphone__img {
+    margin-top: 0;
+  }
+}
+.sirius .smartphone .question-box {
   width: 187px;
   height: 105px;
   margin-left: 78px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   padding: 19px;
   box-shadow: 0px 13.5277px 39.7872px rgba(187, 166, 255, 0.78);
 }
-.sirius .question-box__text {
-  margin-bottom: 7px;
+@media (max-width: 991px) {
+  .sirius .smartphone .question-box {
+    width: 140px;
+    height: 84px;
+    padding: 10px;
+    position: absolute;
+    top: 0;
+  }
+}
+@media (max-width: 768px) {
+  .sirius .smartphone .question-box {
+    top: 8px;
+  }
+}
+.sirius .smartphone .question-box__text {
+  margin-bottom: 6px;
   text-align: center;
   font-weight: 700;
-  font-size: 12px;
-  line-height: 16px;
+  font-size: 10px;
+  line-height: 14px;
   color: #000;
 }
-.sirius .question-box__btn {
+.sirius .smartphone .question-box__btn {
   width: 148px;
   height: 46px;
   padding: 16px 22px;
@@ -1076,17 +1143,19 @@ body {
   line-height: 14px;
   font-weight: 400;
 }
-.sirius .question-box__btn:hover {
+@media (max-width: 991px) {
+  .sirius .smartphone .question-box__btn {
+    width: 116px;
+    height: 32px;
+    font-size: 10px;
+    line-height: 14px;
+    padding: 8px;
+  }
+}
+.sirius .smartphone .question-box__btn:hover {
   transition: all 0.2s;
   box-shadow: 0 0 10px rgba(187, 166, 255, 0.78);
   background: linear-gradient(326.06deg, #7049f2 11.53%, #3c10cd 74.32%);
-}
-.sirius__about {
-  display: flex;
-  flex-direction: column;
-  margin-top: 31px;
-  margin-left: 29px;
-  margin-bottom: 60px;
 }
 .sirius__title {
   text-align: left;
@@ -1097,13 +1166,13 @@ body {
   color: #34449C;
   text-transform: uppercase;
 }
-.sirius__descr {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+@media (max-width: 768px) {
+  .sirius__title {
+    font-size: 14px;
+  }
 }
 .sirius__textbox {
-  width: 438px;
+  max-width: 438px;
 }
 .sirius__text {
   margin-bottom: 24px;
@@ -1112,21 +1181,65 @@ body {
 .sirius__text:last-child {
   margin-bottom: 0;
 }
+@media (max-width: 768px) {
+  .sirius__text {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
 .sirius__features {
   margin-left: 70px;
+  margin-top: 77px;
+}
+@media (max-width: 991px) {
+  .sirius__features {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding-left: 16px;
+    gap: 16px;
+  }
 }
 .sirius__feature {
   list-style-image: url("../img/arrow.svg");
+}
+@media (max-width: 991px) {
+  .sirius__feature {
+    margin: 0 auto;
+  }
+}
+@media (max-width: 768px) {
+  .sirius__feature {
+    margin-left: 0;
+    text-align: left;
+  }
 }
 .sirius .cards {
   display: flex;
   flex-direction: row;
   gap: 19px;
 }
+@media (max-width: 1300px) {
+  .sirius .cards {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+@media (max-width: 768px) {
+  .sirius .cards {
+    gap: 8px;
+  }
+}
 .sirius .cards__item {
   width: 236px;
   height: 342px;
   box-shadow: 0px 4px 100px rgba(208, 218, 227, 0.57);
+}
+@media (max-width: 768px) {
+  .sirius .cards__item {
+    width: 90%;
+    height: 100%;
+  }
 }
 .sirius .cards__title {
   margin: 16px 0;
@@ -1135,8 +1248,19 @@ body {
   line-height: 20px;
   color: #404040;
 }
+@media (max-width: 768px) {
+  .sirius .cards__title {
+    font-size: 14px;
+  }
+}
 .sirius .cards__descr {
   color: #404040;
+}
+@media (max-width: 768px) {
+  .sirius .cards__descr {
+    font-size: 12px;
+    line-height: 18px;
+  }
 }
 
 .tariffs {
