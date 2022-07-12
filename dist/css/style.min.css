@@ -201,6 +201,13 @@ body {
   line-height: 44px;
   color: #303030;
 }
+@media (max-width: 768px) {
+  .title {
+    margin-bottom: 8px;
+    font-size: 24px;
+    line-height: 30px;
+  }
+}
 .title_white {
   color: #fff;
 }
@@ -968,7 +975,6 @@ body {
 }
 .support__item {
   max-width: 344px;
-  min-height: auto;
   display: flex;
   flex-direction: column;
   gap: 16px;
@@ -1264,20 +1270,42 @@ body {
 }
 
 .tariffs {
-  width: 1062px;
+  max-width: 1062px;
   margin: 0 auto;
   margin-bottom: 144px;
   display: flex;
   flex-direction: column;
+}
+@media (max-width: 1300px) {
+  .tariffs {
+    padding: 0 20px;
+  }
+}
+@media (max-width: 991px) {
+  .tariffs {
+    margin-bottom: 72px;
+  }
 }
 .tariffs__subtitle {
   margin-bottom: 32px;
   text-align: center;
   color: #404040;
 }
+@media (max-width: 768px) {
+  .tariffs__subtitle {
+    margin-bottom: 16px;
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
 .tariffs__choice {
   margin: 0 auto;
   margin-bottom: 32px;
+}
+@media (max-width: 768px) {
+  .tariffs__choice {
+    margin-bottom: 16px;
+  }
 }
 .tariffs__option {
   cursor: pointer;
@@ -1289,6 +1317,13 @@ body {
   font-size: 20px;
   line-height: 30px;
   color: #273895;
+}
+@media (max-width: 768px) {
+  .tariffs__option {
+    margin-right: 25px;
+    font-size: 14px;
+    line-height: 1.1;
+  }
 }
 .tariffs__option:last-child {
   margin-right: 0;
@@ -1308,6 +1343,14 @@ body {
   color: #fff;
   text-align: center;
 }
+@media (max-width: 768px) {
+  .tariffs__option_active {
+    width: 106px;
+    height: 33px;
+    padding: 8px 30px;
+    font-size: 12px;
+  }
+}
 .tariffs__option_active:hover {
   transition: all 0.2s;
   background-color: #202e7d;
@@ -1317,9 +1360,17 @@ body {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: center;
+  gap: 32px;
+}
+@media (max-width: 768px) {
+  .tariffs__cards {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
 }
 .tariffs .tariff {
-  margin-bottom: 32px;
   padding: 48px;
   width: 513px;
   height: 647px;
@@ -1330,16 +1381,34 @@ body {
   align-items: flex-start;
   justify-content: space-between;
 }
-.tariffs .tariff:nth-child(even) {
-  margin-right: 32px;
+@media (max-width: 1300px) {
+  .tariffs .tariff {
+    width: 45%;
+    height: 100%;
+  }
 }
-.tariffs .tariff:nth-last-child(-n+2) {
-  margin-bottom: 0;
+@media (max-width: 768px) {
+  .tariffs .tariff {
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 24px 19px;
+  }
 }
 .tariffs .tariff__start {
   width: 1062px;
   height: 495px;
   align-items: center;
+}
+@media (max-width: 1300px) {
+  .tariffs .tariff__start {
+    height: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .tariffs .tariff__start {
+    width: 100%;
+  }
 }
 .tariffs .tariff__name {
   font-weight: 700;
@@ -1350,6 +1419,18 @@ body {
   text-transform: uppercase;
   color: #2741D0;
 }
+@media (max-width: 991px) {
+  .tariffs .tariff__name {
+    font-size: 12px;
+    line-height: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .tariffs .tariff__name {
+    margin-bottom: 4px;
+    line-height: 30px;
+  }
+}
 .tariffs .tariff__free {
   font-weight: 500;
   font-size: 32px;
@@ -1357,16 +1438,54 @@ body {
   text-align: center;
   color: #C9C9C9;
 }
+@media (max-width: 991px) {
+  .tariffs .tariff__free {
+    font-size: 30px;
+    line-height: 40px;
+  }
+}
+@media (max-width: 768px) {
+  .tariffs .tariff__free {
+    font-size: 18px;
+    line-height: 44px;
+  }
+}
 .tariffs .tariff__cost {
   font-weight: 700;
   font-size: 16px;
   line-height: 30px;
   color: #404040;
 }
+@media (max-width: 991px) {
+  .tariffs .tariff__cost {
+    font-size: 14px;
+    line-height: 24px;
+  }
+}
+@media (max-width: 768px) {
+  .tariffs .tariff__cost {
+    line-height: 30px;
+    margin-bottom: 16px;
+  }
+}
 .tariffs .tariff__for {
   line-height: 30px;
   text-align: center;
   color: #737373;
+}
+@media (max-width: 991px) {
+  .tariffs .tariff__for {
+    font-size: 12px;
+    line-height: 24px;
+    text-align: left;
+  }
+}
+@media (max-width: 768px) {
+  .tariffs .tariff__for {
+    margin-bottom: 16px;
+    line-height: 20px;
+    text-align: center;
+  }
 }
 .tariffs .tariff__descr {
   font-weight: 500;
@@ -1375,29 +1494,74 @@ body {
   text-align: center;
   color: #404040;
 }
+@media (max-width: 991px) {
+  .tariffs .tariff__descr {
+    font-size: 14px;
+    line-height: 24px;
+  }
+}
+@media (max-width: 768px) {
+  .tariffs .tariff__descr {
+    margin-bottom: 16px;
+    line-height: 30px;
+  }
+}
 .tariffs .tariff__options {
   display: flex;
   flex-direction: column;
+  gap: 16px;
+}
+@media (max-width: 768px) {
+  .tariffs .tariff__options {
+    gap: 8px;
+    margin-bottom: 16px;
+  }
+}
+@media (max-width: 768px) {
+  .tariffs .tariff__options_start {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 16px;
+  }
 }
 .tariffs .tariff__options_start div {
   display: flex;
   flex-direction: row;
+  gap: 24px;
+}
+@media (max-width: 768px) {
+  .tariffs .tariff__options_start div {
+    flex-direction: column;
+    gap: 8px;
+  }
 }
 .tariffs .tariff__options_start div .tariff__option {
   width: 306px;
-  margin-right: 24px;
 }
-.tariffs .tariff__options_start div .tariff__option:nth-child(even) {
-  margin-right: 0;
+@media (max-width: 768px) {
+  .tariffs .tariff__options_start div .tariff__option {
+    width: 100%;
+  }
 }
 .tariffs .tariff__option {
-  margin-bottom: 16px;
   display: flex;
   align-items: center;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
   color: #404040;
+}
+@media (max-width: 991px) {
+  .tariffs .tariff__option {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .tariffs .tariff__option {
+    font-size: 12px;
+  }
 }
 .tariffs .tariff__option::before {
   content: "";
@@ -1407,12 +1571,23 @@ body {
   border-left: 7px solid transparent;
   margin-right: 8px;
 }
+@media (max-width: 768px) {
+  .tariffs .tariff__option::before {
+    margin-right: 18px;
+  }
+}
 .tariffs .tariff__details {
   font-weight: 500;
   font-size: 16px;
   line-height: 40px;
   color: #2741D0;
   text-decoration: none;
+}
+@media (max-width: 991px) {
+  .tariffs .tariff__details {
+    font-size: 12px;
+    line-height: 40px;
+  }
 }
 .tariffs .tariff__details::after {
   margin-left: 16px;
@@ -1423,6 +1598,13 @@ body {
 .tariffs .tariff__request {
   width: 220px;
   height: 56px;
+}
+@media (max-width: 768px) {
+  .tariffs .tariff__request {
+    height: 50px;
+    font-size: 12px;
+    line-height: 18px;
+  }
 }
 
 .partner {
